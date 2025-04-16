@@ -17,6 +17,7 @@ function App() {
     setRecommendation(null); // clear previous results
   
     try {
+      console.log("Submitting", { zipcode, category });
       const response = await axios.post("https://datedash.onrender.com/api/recommend/", {
         zipcode,
         category,
